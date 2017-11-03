@@ -1,0 +1,87 @@
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Merienda One";
+  background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+div, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.stretch {
+  width: 100%;
+  height: 80%;
+}
+
+.butt {
+  background-color: #337AFF; /* Green */
+    border: none;
+    margin: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.classes {
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 5px;
+  margin: 10px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#newHW {
+  top: 10px;  
+  position: absolute;
+  right: 250px;
+  font-size: 110%;
+}
+
+.h1 {
+  margin: 0;
+  color: white;
+  font-size: 50%;
+  font-family: 'Aclonica';
+}
+
+.question {
+  top: 10px;
+  position: absolute;
+  left: 250px;
+}
+
+.h2 {
+  font-size: 20%;
+}
+
+.h3 {
+  font-size: 30%;
+}
+
+.list {
+  text-align: center;
+  list-style: none;
+  background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+}

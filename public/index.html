@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merienda+One" />
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>My Assignments</title>
+</head>
+<body>
+  <div id='app' ng-app='app' ng-controller='mainCtrl'>
+
+    <div ng-if='!classes.length' class='no-classes center stretch'>
+      <h1 class='h1'>
+        Set up your endpoint at `/classes` to get this view working
+      </h1>
+    </div>
+<div class='list center stretch'>
+<h1 class="question">Enter new assignments:  </h1> <br>
+<form id="newHW" ng-submit="addHW()" onsubmit="window.location.reload()">
+  Name: <input type="text" ng-model="Name" value=""><br>
+ Class: <input type="text" ng-model="Section" value=""><br>
+Due Date: <input type ="text" ng-model="Ddate" value=""><br>
+  
+  <input type="submit" value="Add Assignment" class="butt" style="position: absolute; right: 0px">
+</form>
+
+    <ul ng-if='classes.length' class='list center stretch'>
+      <li ng-repeat='p in classes' class='classes'>
+        <h1>{{ p.name }}</h1>
+        <h2>{{ p.section }}</h2>
+	<h3>{{ p.date }}</h3>
+      </li>
+    </ul>
+
+  </div>
+</div>
+</body>
+</html>
